@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<FrameLayout
+<com.zhenxiang.blur.WindowBlurFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -25,7 +25,11 @@
     android:gravity="center"
     android:paddingTop="@dimen/volume_dialog_ringer_rows_padding"
     android:paddingBottom="@dimen/volume_dialog_ringer_rows_padding"
-    android:theme="@style/volume_dialog_theme">
+    android:theme="@style/volume_dialog_theme"
+    app:backgroundColour="@color/surface_aqua"
+    app:cornerRadius="@dimen/volume_dialog_panel_width_half"
+    app:blurRadius="@integer/background_blur_radius"
+    app:blurBackgroundColourOpacity="@dimen/background_blur_colour_opacity">
 
     <LinearLayout
         android:layout_height="wrap_content"
@@ -80,4 +84,4 @@
             android:soundEffectsEnabled="false" />
     </LinearLayout>
 
-</FrameLayout>
+</com.zhenxiang.blur.WindowBlurFrameLayout>
